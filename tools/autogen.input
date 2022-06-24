@@ -1,0 +1,4 @@
+--with-galleries=no
+--disable-firebird-sdbc
+--with-parallelism=16
+--disable-pdfium
