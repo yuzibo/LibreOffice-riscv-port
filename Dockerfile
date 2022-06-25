@@ -11,9 +11,7 @@ WORKDIR /root/
 # keep tarball wtih Dockerfile in a same dir if prepare tarball
 # in docker image, otherwise comment out it
 COPY libreoffice-7.3.4.2.tar.xz ./
-COPY autogen.input ./
-COPY ../patch ./
-COPY start.sh ./
+ADD patch ./patch
 
 RUN apt update -y && apt install ca-certificates -y
 
